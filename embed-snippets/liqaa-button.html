@@ -1,0 +1,49 @@
+<!--
+  LIQAA · Drop-in support button
+  -----------------------------------------------------------
+  Paste this into any HTML page. Replace pk_live_… with your
+  publishable key from https://liqaa.io/console.
+
+  This is the "minimum viable integration" — a button that
+  starts a video call. For production use see the templates
+  in https://github.com/hartemyaakoub/liqaa-template-nextjs.
+-->
+
+<script src="https://liqaa.io/sdk.js"></script>
+<button id="liqaa-talk" style="
+  position: fixed; bottom: 24px; right: 24px;
+  padding: 14px 22px; border-radius: 999px; border: 0;
+  background: #0a0d18; color: #fff; font-weight: 700; font-size: 14px;
+  font-family: system-ui, sans-serif;
+  box-shadow: 0 12px 40px rgba(0,0,0,.18); cursor: pointer;
+  display: inline-flex; align-items: center; gap: 10px;
+">
+  🎥 Talk to a human
+</button>
+
+<script>
+  (function () {
+    var btn = document.getElementById('liqaa-talk');
+    btn.addEventListener('click', async function () {
+      btn.disabled = true;
+      btn.textContent = '⏳ Connecting…';
+      try {
+        // Your server must implement /api/sdk-token. See:
+        // https://github.com/hartemyaakoub/liqaa-template-nextjs
+        var res = await fetch('/api/sdk-token', { method: 'POST' });
+        var data = await res.json();
+        var client = await window.LIQAA.init({
+          publicKey: 'pk_live_REPLACE_ME',
+          sdkToken: data.sdkToken,
+          accent: '#1d4ed8'
+        });
+        await client.startCall('support@you.com', 'Support');
+        btn.textContent = '🔴 In call';
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = '⚠️ Try again';
+        console.error('LIQAA error', err);
+      }
+    });
+  })();
+</script>
