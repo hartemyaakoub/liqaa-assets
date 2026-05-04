@@ -4,28 +4,28 @@ Logos, OG images, embed snippets, brand guidelines. Everything a partner, journa
 
 ## Quick reach
 
-- 🎨 **Logos** → [`logos/`](./logos)
-- 🖼️ **OG images** (for blog posts, integrations) → [`og-images/`](./og-images)
-- 📝 **Embed snippets** (copy-paste HTML) → [`embed-snippets/`](./embed-snippets)
-- 📕 **Brand guidelines** → [`brand-kit/GUIDELINES.md`](./brand-kit/GUIDELINES.md)
+- **Logos** → [`logos/`](./logos)
+- **OG images** (for blog posts, integrations) → [`og-images/`](./og-images)
+- **Embed snippets** (copy-paste HTML) → [`embed-snippets/`](./embed-snippets)
+- **Brand guidelines** → [`brand-kit/GUIDELINES.md`](./brand-kit/GUIDELINES.md)
 
 ## Use these freely
 
 You can use these assets for:
 
-- ✅ Writing about LIQAA in a blog post / newsletter / podcast
-- ✅ Showing the logo on your "Built with LIQAA" / partners page
-- ✅ Documentation that integrates with LIQAA
-- ✅ Comparison tables vs. other video APIs (please be accurate)
-- ✅ Open-source examples / templates
+- Writing about LIQAA in a blog post / newsletter / podcast
+- Showing the logo on your "Built with LIQAA" / partners page
+- Documentation that integrates with LIQAA
+- Comparison tables vs. other video APIs (please be accurate)
+- Open-source examples / templates
 
 You **cannot** use these assets for:
 
-- ❌ Anything that suggests endorsement or partnership we haven't agreed to
-- ❌ Modified logos (don't recolour, rotate, or stretch them)
-- ❌ Selling merchandise
-- ❌ Domain names containing "liqaa"
-- ❌ App names that compete with LIQAA
+- Anything that suggests endorsement or partnership we haven't agreed to
+- Modified logos (don't recolour, rotate, or stretch them)
+- Selling merchandise
+- Domain names containing "liqaa"
+- App names that compete with LIQAA
 
 ## License
 
